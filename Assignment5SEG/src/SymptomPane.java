@@ -10,11 +10,14 @@ import javafx.stage.Stage;
 import javafx.scene.control.Alert.AlertType; 
 import java.time.LocalDate;  
 
+//Author: Michelle Oluwabunmi Oke - moke052@uottawa.ca
+
+
 public class SymptomPane extends Pane{
 	public SymptomPane(String title){
-		Pane symptomPane = new Pane(); 
+		Pane symptomPane = new Pane(); //new pane
 		symptomPane.setStyle("-fx-background-color: white; " + "-fx-border-color: gray; " + "-fx-padding: 4 4;"); // margin spacing at bottom right
-		// Create the labels and textfields
+		// Create the textfields, datepicker and buttons
 		
 		TextField s1Field = new TextField(); 
 		s1Field.relocate(10, 20); 
@@ -51,6 +54,7 @@ public class SymptomPane extends Pane{
 		button3.setPrefSize(100, 30); 
 		button3.setOnAction( new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent actionEvent) {
+				System.out.println("Symptoms:" + "\n\n\n")
 				if (s1Field.getText().length() > 0) {
 					System.out.println(s1Field.getText() + ":   " + a.getValue() + " to " + e.getValue());
 				}
@@ -69,7 +73,7 @@ public class SymptomPane extends Pane{
 		
 		
 
-		// Add all labels and textfields to the pane
+		// Add all componenets to the pane
 		symptomPane.getChildren().addAll(s1Field, s2Field, s3Field, s4Field, a, b, c, d, e, f, g, h, button3);
 
 
