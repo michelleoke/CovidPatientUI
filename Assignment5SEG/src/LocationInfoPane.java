@@ -10,11 +10,13 @@ import javafx.stage.Stage;
 import javafx.scene.control.Alert.AlertType; 
 import java.time.LocalDate; 
 
+//Author: Michelle Oluwabunmi Oke - moke052@uottawa.ca
 public class LocationInfoPane extends Pane{
 	public LocationInfoPane(String title){
+		//Create new pane
 		Pane locationPane = new Pane(); 
 		locationPane.setStyle("-fx-background-color: white; " + "-fx-border-color: gray; " + "-fx-padding: 4 4;"); // margin spacing at bottom right
-		// Create the labels and textfields
+		// Create the labels, textfields, buttons
 		Label label1 = new Label("Test Location"); 
 		label1.relocate(10, 20); 
 		label1.setPrefSize(100, 30);
@@ -45,7 +47,7 @@ public class LocationInfoPane extends Pane{
 		button1.relocate(10, 160); 
 		button1.setPrefSize(100, 30); 
 		button1.setOnAction( new EventHandler<ActionEvent>() {
-			public void handle(ActionEvent actionEvent) {
+			public void handle(ActionEvent actionEvent) { //Getting the button to print the information inputted
 				System.out.println("Location Information" + "\n\n");
 
 				System.out.println("Test Location: " + testLocation.getText());
@@ -57,12 +59,12 @@ public class LocationInfoPane extends Pane{
 
 		});
 		
-		// Add all labels and textfields to the pane
+		// Add all labels, textfields and buttons to the pane
 		locationPane.getChildren().addAll(label1, label2, label3, label4, testLocation, laboratory, testDate, resultDate, button1);
 
 
 
-		Label titleLabel = new Label(); 
+		Label titleLabel = new Label(); //creating the title label
 		titleLabel.setText(title);
 		titleLabel.setStyle("-fx-background-color: white; \n" + "-fx-translate-y: -8; \n" + "-fx-translate-x: 10;");
 		getChildren().addAll(locationPane, titleLabel);
