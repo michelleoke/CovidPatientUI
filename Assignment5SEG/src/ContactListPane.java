@@ -10,11 +10,15 @@ import javafx.stage.Stage;
 import javafx.scene.control.Alert.AlertType; 
 import java.time.LocalDate; 
 
+
+
+//Author: Michelle Oluwabunmi Oke - moke052@uottawa.ca
 public class ContactListPane extends Pane{
 	public ContactListPane(String title){
+		//Create new pane
 		Pane contactListPane = new Pane(); 
 		contactListPane.setStyle("-fx-background-color: white; " + "-fx-border-color: gray; " + "-fx-padding: 4 4;"); // margin spacing at bottom right
-		// Create the labels and textfields
+		// Create the labels, textfields, buttons
 
 		TextField name1 = new TextField(); 
 		name1.relocate(10, 20); 
@@ -38,7 +42,7 @@ public class ContactListPane extends Pane{
 		Button button2 = new Button("Add"); 
 		button2.relocate(10, 200); 
 		button2.setPrefSize(100, 30); 
-		button2.setOnAction( new EventHandler<ActionEvent>() {
+		button2.setOnAction( new EventHandler<ActionEvent>() { //Getting the button to print the information inputted
 			public void handle(ActionEvent actionEvent) {
 				System.out.println("Contact Trace:");
 
@@ -63,9 +67,9 @@ public class ContactListPane extends Pane{
 			} 
 
 		});
-		contactListPane.getChildren().addAll(name1, name2, name3, name4 ,name5, name6, button2);
+		contactListPane.getChildren().addAll(name1, name2, name3, name4 ,name5, name6, button2); // adding all the components to the pane
 
-		
+		//creating the title label
 		Label titleLabel = new Label(); 
 		titleLabel.setText(title);
 		titleLabel.setStyle("-fx-background-color: white; \n" + "-fx-translate-y: -8; \n" + "-fx-translate-x: 10;");
