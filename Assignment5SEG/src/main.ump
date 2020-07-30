@@ -1,0 +1,25 @@
+class Patient{
+	String name;
+  String address;
+  String phoneNumber;
+  int healthNumber;
+  Test[] listOfTests;
+  Symptom[] listOfSymptoms; // find a way to get start and end dates of each symptom
+  Patient[] listOfContacts;
+}
+
+class Symptom{
+  String name;
+  Date startDate;
+  Date endDate;
+}
+
+class Test{
+	String patientName;
+  Date testDate;
+  String testLocation;
+  String testType;
+  String labLocation;
+  Date resultDate;
+  boolean result;  
+}

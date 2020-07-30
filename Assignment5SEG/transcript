@@ -1,0 +1,119 @@
+Last login: Mon Jul 13 18:34:19 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Bunmis-MacBook-Air:~ bunmioke$ cd downloads/Test/src
+Bunmis-MacBook-Air:src bunmioke$ javac *.java
+Bunmis-MacBook-Air:src bunmioke$ java main
+name:James
+address:2 Rideau St
+phoneNumber:613-000-0001
+healthNumber:1
+Tests:
+	patientName:James
+	testLocation:Princeton-Plainsboro Hospital lab
+	testType:Blood Test
+	labLocation:Princeton-Plainsboro Hospital
+	result:true
+	testDate=2020-06-04
+	resultDate=2020-06-08
+
+	patientName:James
+	testLocation:Princeton-Plainsboro Hospital lab
+	testType:Swab Test
+	labLocation:Princeton-Plainsboro Hospital
+	result:true
+	testDate=2020-06-05
+	resultDate=2020-06-09
+
+
+name:Susan
+address:5 Mackenzie St
+phoneNumber:613-000-0002
+healthNumber:2
+Tests:
+	patientName:Susan
+	testLocation:Ottawa General Hospital Lab
+	testType:Blood Test
+	labLocation:Ottawa General Hospital
+	result:false
+	testDate=2020-06-04
+	resultDate=2020-06-08
+
+	patientName:Susan
+	testLocation:Ottawa General Hospital Lab
+	testType:Nose Swab Test
+	labLocation:Ottawa General Hospital Lab
+	result:false
+	testDate=2020-06-05
+	resultDate=2020-06-09
+
+
+name:Andre
+address:20 Greenfield St
+phoneNumber:613-000-0003
+healthNumber:3
+Tests:
+	patientName:Andre
+	testLocation:Ottawa General Hospital Lab
+	testType:Blood Test
+	labLocation:Ottawa General Hospital
+	result:false
+	testDate=2020-06-04
+	resultDate=2020-06-08
+
+	patientName:Andre
+	testLocation:Ottawa General Hospital Lab
+	testType:Nose Swab Test
+	labLocation:Ottawa General Hospital Lab
+	result:false
+	testDate=2020-06-05
+	resultDate=2020-06-09
+
+
+name:Ash
+address:3 Mann Ave.
+phoneNumber:613-000-0004
+healthNumber:4
+Tests:
+	patientName:Ash
+	testLocation:Princeton-Plainsboro Hospital lab
+	testType:Blood Test
+	labLocation:Princeton-Plainsboro Hospital
+	result:true
+	testDate=2020-06-04
+	resultDate=2020-06-08
+
+	patientName:Ash
+	testLocation:Princeton-Plainsboro Hospital lab
+	testType:Swab Test
+	labLocation:Princeton-Plainsboro Hospital
+	result:true
+	testDate=2020-06-05
+	resultDate=2020-06-09
+
+
+name:Frank
+address:63 Blackburn St.
+phoneNumber:613-000-0005
+healthNumber:5
+Tests:
+	patientName:Frank
+	testLocation:John Hopkins Hospital lab
+	testType:Blood Test
+	labLocation:John Hopkins Hospital
+	result:true
+	testDate=2020-06-04
+	resultDate=2020-06-08
+
+	patientName:Frank
+	testLocation:John Hopkins Hospital lab
+	testType:Swab Test
+	labLocation:John Hopkins Hospital
+	result:true
+	testDate=2020-06-05
+	resultDate=2020-06-09
+
+
+Bunmis-MacBook-Air:src bunmioke$ 
