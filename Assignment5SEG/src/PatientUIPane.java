@@ -13,10 +13,14 @@ import javafx.stage.Stage;
 import javafx.scene.control.Alert.AlertType; 
 import java.time.LocalDate; 
 
+
+//Author: Michelle Oluwabunmi Oke - moke052@uottawa.ca
+
 public class PatientUIPane extends Application { 
 	public void start (Stage primaryStage) {
+		//Create new pane
 		Pane patientUIPane = new Pane(); 
-		
+		//Add all the individual panes to the main pane/window
 		PatientInfoPane aPane = new PatientInfoPane("Patient Information");
 		aPane.relocate(10,30);
 		aPane.setPrefSize(300, 200);
@@ -38,8 +42,8 @@ public class PatientUIPane extends Application {
 		button5.relocate(450, 550); 
 		button5.setPrefSize(100, 30); 
 		button5.setOnAction( new EventHandler<ActionEvent>() {
-			public void handle(ActionEvent actionEvent) {
-				Stage newWindow = new Stage();
+			public void handle(ActionEvent actionEvent) { // opens a new window where all the infomation form the individual panes is printed out
+				Stage newWindow = new Stage(); 
 				newWindow.setTitle("COVID-19 test patient");
 				newWindow.setX(primaryStage.getX() + 200);
 				newWindow.setY(primaryStage.getY() + 100);
@@ -51,7 +55,7 @@ public class PatientUIPane extends Application {
 
 
 
-		// Add all labels and textfields to the pane
+		// Add all labels, buttons and textfields to the pane
 		patientUIPane.getChildren().addAll(aPane, bPane, cPane, dPane, ePane, button5);
 
 		primaryStage.setTitle("Patient UI");// Set title of window 
