@@ -54,7 +54,7 @@ public class SymptomPane extends Pane{
 		button3.setPrefSize(100, 30); 
 		button3.setOnAction( new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent actionEvent) {
-				System.out.println("Symptoms:" + "\n\n\n")
+				System.out.println("Symptoms:" + "\n\n\n");
 				if (s1Field.getText().length() > 0) {
 					System.out.println(s1Field.getText() + ":   " + a.getValue() + " to " + e.getValue());
 				}
